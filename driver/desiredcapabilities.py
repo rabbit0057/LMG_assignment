@@ -30,6 +30,7 @@ TestPlatformVersion = '10'
 TestDeviceName = 'Samsung Galaxy note 10+'
 TestAutomationName = 'UiAutomator2'
 TestNoReset = True
+TestAppActivity = "com.mgmresorts.mgmresorts.MainActivity"
 TestIpPort = "http://0.0.0.0:4723/wd/hub"
 
 

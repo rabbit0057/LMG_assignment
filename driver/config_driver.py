@@ -13,7 +13,8 @@ class Driver:
             "automationName": TestAutomationName,
             "app": TestApkPath,
             "appPackage": TestappPackage,
-            "noReset":TestNoReset
+            "noReset":TestNoReset,
+            "appActivity":TestAppActivity,
             }
         self.instance = webdriver.Remote(TestIpPort, desired_caps)
 

@@ -32,33 +32,29 @@ class FlutterAppTestCases(unittest.TestCase):
     def setUp(self):
         self.driver = Driver() 
 
-    # def test_TestCase_A_Flutter_App_Installed(self):
-    #     app_reset_start_time.test_1(self)
+    def test_TestCase_A_Flutter_App_Installed(self):
+        app_reset_start_time.test_1(self)
     
-    # def test_TestCase_B_Flutter_App_Battery_Metrics(self):
-    #     app_battery_metrics.test_2(self)
+    def test_TestCase_B_Flutter_App_Battery_Metrics(self):
+        app_battery_metrics.test_2(self)
 
-    # def test_TestCase_C_Flutter_App_Memory_Metrics(self):
-    #     app_memory_metrics.test_3(self)
+    def test_TestCase_C_Flutter_App_Memory_Metrics(self):
+        app_memory_metrics.test_3(self)
 
-    def test_TestCase_C_Flutter_App_Network_Metrics(self):
-        app_network_metrics.test_4(self)
+    # def test_TestCase_C_Flutter_App_Network_Metrics(self):
+    #     app_network_metrics.test_4(self)
 
-    # def test_TestCase_D_Flutter_App_Permission(self):
-    #     app_permission.test_5(self)
+    def test_TestCase_D_Flutter_App_Permission(self):
+        app_permission.test_5(self)
 
-    # def test_TestCase_E_Flutter_App_Check_In(self):
-    #     app_check_in.test_6(self)
+    def test_TestCase_E_Flutter_App_Check_In(self):
+        app_check_in.test_6(self)
         
-    # def test_TestCase_E_Flutter_App_Dining(self):
-    #     app_dining.test_7(self)
+    def test_TestCase_E_Flutter_App_Dining(self):
+        app_dining.test_7(self)
 
-    # # @unittest.skip("Skip this test for now")
-    # # def test_TestCase_E_Flutter_App_Night_Life():
-    # #     app_room_nightlife.test_8()
-
-    # def test_TestCase_E_Flutter_App_Login(self):
-    #     app_login.test_9(self)
+    def test_TestCase_E_Flutter_App_Login(self):
+        app_login.test_9(self)
         
 
     def tearDown(self):

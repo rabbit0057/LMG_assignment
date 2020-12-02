@@ -44,6 +44,7 @@ class app_login:
         time.sleep(10)
         self.driver.instance.implicitly_wait(10)
         Info = self.driver.instance.find_element_by_accessibility_id("My Info")
+        LOGGER.info("Confirming Log-in Sucessfully")
         LOGGER.info("Checking My Info")
         Info.click()
         
@@ -53,6 +54,8 @@ class app_login:
         AppSettings.click()
         LOGGER.info("Checking App Settings")
         Back.click()
+        end_time = time.time()
+        LOGGER.info("Total execution time: {} seconds".format(end_time - start_time))
 
 
         
