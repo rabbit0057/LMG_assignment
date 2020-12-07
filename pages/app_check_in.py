@@ -4,10 +4,10 @@ import datetime
 from appium.webdriver.common.touch_action import TouchAction
 
 
-# test case to check if the app is installed sucessfully
+# Test Case for App-check-in and health check details
 class app_check_in:
     def test_6(self):
-        start_time = time.time()
+        start_time = time.time() # script start time
         self.driver.instance.implicitly_wait(10)
         
         CheckInButton = self.driver.instance.find_element_by_accessibility_id("Check-In")
@@ -29,4 +29,4 @@ class app_check_in:
         LOGGER.info("Back to Home Page")
 
         end_time = time.time()
-        LOGGER.info("Total execution time: {} seconds".format(end_time - start_time))
+        LOGGER.info("Total execution time: {} seconds".format(end_time - start_time)) # script end time

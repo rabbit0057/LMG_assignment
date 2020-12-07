@@ -7,7 +7,7 @@ from selenium.common.exceptions import NoSuchElementException
 
 class app_login:
     def test_9(self):
-        start_time = time.time()
+        start_time = time.time() # script start time
         self.driver.instance.implicitly_wait(10)
 
         try:
@@ -27,6 +27,8 @@ class app_login:
         Password = self.driver.instance.find_element_by_xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.widget.EditText[2]")
         LoginButton = self.driver.instance.find_element_by_accessibility_id("Log In")
         
+
+        # Entering the username and password for login
         try: 
             Email.click()
             LOGGER.info("Entering Email and Password")
@@ -44,6 +46,7 @@ class app_login:
         time.sleep(10)
         self.driver.instance.implicitly_wait(10)
         Info = self.driver.instance.find_element_by_accessibility_id("My Info")
+        # Verifing to check if the user is sucessfully logged in
         LOGGER.info("Confirming Log-in Sucessfully")
         LOGGER.info("Checking My Info")
         Info.click()
@@ -55,7 +58,7 @@ class app_login:
         LOGGER.info("Checking App Settings")
         Back.click()
         end_time = time.time()
-        LOGGER.info("Total execution time: {} seconds".format(end_time - start_time))
+        LOGGER.info("Total execution time: {} seconds".format(end_time - start_time)) # script end time
 
 
         

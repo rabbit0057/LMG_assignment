@@ -46,15 +46,19 @@ class FlutterAppTestCases(unittest.TestCase):
 
     def test_TestCase_D_Flutter_App_Permission(self):
         app_permission.test_5(self)
+        app_memory_metrics.test_3(self)
 
     def test_TestCase_E_Flutter_App_Check_In(self):
         app_check_in.test_6(self)
+        app_memory_metrics.test_3(self)
         
     def test_TestCase_E_Flutter_App_Dining(self):
         app_dining.test_7(self)
+        app_memory_metrics.test_3(self)
 
     def test_TestCase_E_Flutter_App_Login(self):
         app_login.test_9(self)
+        app_memory_metrics.test_3(self)
         
 
     def tearDown(self):

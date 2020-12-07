@@ -4,10 +4,10 @@ import datetime
 from appium.webdriver.common.touch_action import TouchAction
 
 
-# test case to check if the app is installed sucessfully
+# Test Case to find resturent and also check the filter of Cuisine,Meal type,Region
 class app_dining:
     def test_7(self):
-        start_time = time.time()
+        start_time = time.time() # script start time
         self.driver.instance.implicitly_wait(10)
 
         Dining = self.driver.instance.find_element_by_accessibility_id("Dining")
@@ -32,6 +32,7 @@ class app_dining:
         else:
             LOGGER.info("ERROR")
 
+        # Performing Scrolling
         touch = TouchAction(self.driver.instance)
         for i in range(2):
             touch.press(x=990, y=1602).move_to(x=993, y=680).release().perform()
@@ -102,5 +103,5 @@ class app_dining:
 
 
         end_time = time.time()
-        LOGGER.info("Total execution time: {} seconds".format(end_time - start_time))
+        LOGGER.info("Total execution time: {} seconds".format(end_time - start_time)) # script end time
     
