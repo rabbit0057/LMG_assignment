@@ -39,7 +39,10 @@ class FlutterAppTestCases(unittest.TestCase):
         app_battery_metrics.test_2(self)
 
     def test_TestCase_C_Flutter_App_Memory_Metrics(self):
+        start_time = time.time() # script start time
         app_memory_metrics.test_3(self)
+        end_time = time.time()
+        LOGGER.info("Total execution time: {} seconds".format(end_time - start_time)) # script end time
 
     # def test_TestCase_C_Flutter_App_Network_Metrics(self):
     #     app_network_metrics.test_4(self)

@@ -12,7 +12,7 @@ import datetime
 # http://appium.io/docs/en/commands/device/performance-data/get-performance-data/
 class app_memory_metrics:
     def test_3(self):
-        start_time = time.time() # script start time
+        # start_time = time.time() # script start time
         LOGGER.info("CAPTURING MEMORY METRICS") 
         # getting memory info using memoryinfo
         memory = self.driver.instance.get_performance_data(TestappPackage,'memoryinfo')
@@ -29,5 +29,5 @@ class app_memory_metrics:
         else:
             LOGGER.info("MEMORY IS WITHIN THE THRESHOLD")
 
-        end_time = time.time()
-        LOGGER.info("Total execution time: {} seconds".format(end_time - start_time)) # script end time
+        # end_time = time.time()
+        # LOGGER.info("Total execution time: {} seconds".format(end_time - start_time)) # script end time
